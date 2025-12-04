@@ -26,7 +26,7 @@ BOT_TOKEN = "8265:AAHQ5AqxAhSh0DsIKcQmNLJxQzxkDtwPvZg"
 CONFIG_FILE = "/etc/zivpn/config.json"
 
 # Admin configuration - ONLY YOUR ID CAN SEE ADMIN COMMANDS
-ADMIN_IDS = [6354074838, 7576434717]  # Telegram ID
+ADMIN_IDS = [7240495054, 7576434717]  # Telegram ID
 
 # ===== SYNC CONFIG FUNCTIONS =====
 def read_json(path, default):
