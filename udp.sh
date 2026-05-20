@@ -184,7 +184,7 @@ fi
 
 # Get Telegram Bot Token (optional)
 read -r -p "Telegram Bot Token (Optional, Enter=Skip): " BOT_TOKEN
-BOT_TOKEN="${BOT_TOKEN:-8821339666:AAFZrfX5dDfIWoQcrTNiQFhoCWNmkNUWnBc}"
+BOT_TOKEN="${BOT_TOKEN:-8578945929:AAFlyKGj7t4mjP45lMbSQoFofRw225zMULE}"
 
 {
   echo "WEB_ADMIN_USER=${WEB_USER}"
@@ -223,8 +223,6 @@ if jq . >/dev/null 2>&1 <<<'{}'; then
     .cert = "/etc/zivpn/zivpn.crt" |
     .key  = "/etc/zivpn/zivpn.key" |
     .obfs = "wechat" |
-    .mux = true |
-    .mux_concurrency = 100 |
     .server = $ip
   ' "$CFG" > "$TMP" && mv "$TMP" "$CFG"
 fi
