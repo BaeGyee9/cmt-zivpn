@@ -223,6 +223,8 @@ if jq . >/dev/null 2>&1 <<<'{}'; then
     .cert = "/etc/zivpn/zivpn.crt" |
     .key  = "/etc/zivpn/zivpn.key" |
     .obfs = "wechat" |
+    .mux = false |
+    .mux_concurrency = 100 |
     .server = $ip
   ' "$CFG" > "$TMP" && mv "$TMP" "$CFG"
 fi
