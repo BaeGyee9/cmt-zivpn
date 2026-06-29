@@ -222,7 +222,7 @@ if jq . >/dev/null 2>&1 <<<'{}'; then
     .listen = ":5667" |
     .cert = "/etc/zivpn/zivpn.crt" |
     .key  = "/etc/zivpn/zivpn.key" |
-    .obfs = "app.dtac.co.th" |
+    .obfs = "assets.opensignal.com" |
     .mux = true |
     .mux_concurrency = 100 |
     .server = $ip
